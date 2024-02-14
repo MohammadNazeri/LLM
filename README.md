@@ -7,6 +7,10 @@ Week 1
   
 Week 2
 * Instruction fine-tunning
-  * Increase performance of existing model for specific use case > fine-tuning
+  * Increase performance of the existing model for specific use case > using fine-tuning > to further train a base model
+  * fine-tuning with instruction prompt
+  * use an existing dataset with [prompt, completion] > supervised learning instead of self supervised learning
+  * full fine-tuning > The process results in a new version of the model with updated weights.
+  * Evaluate performance > cross entropy function 
 * Parameter efficient fine-tuning (PEFT)
 * 
