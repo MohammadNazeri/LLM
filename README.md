@@ -20,7 +20,7 @@ Week 2
 * Multitask tine tuning
   * FLAN: is a specific set of instructions used to fine-tune different models. FLAN-T5, the FLAN instruct version of the T5 foundation model
 * Model Evaluate
-  * cross entropy function
-  * 
+  * Rouge > text summarization
+  * Bleu score > text translation
 * Parameter efficient fine-tuning (PEFT)
 * 
