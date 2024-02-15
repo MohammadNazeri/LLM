@@ -22,5 +22,9 @@ Week 2
 * Model Evaluate
   * Rouge > text summarization
   * Bleu score > text translation
+* Benchmark
+  * Using pre-existing datasets and associated benchmarks
+  * Benchmark: GLUE, SuperGLUE and HELM
+  * 
 * Parameter efficient fine-tuning (PEFT)
 * 
