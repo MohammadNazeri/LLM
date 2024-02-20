@@ -34,3 +34,13 @@ Week 2
     * Additive: It keeps all of the original LLM weights frozen and introduces new trainable components. there are two approches:
       *  Adapter methods add new trainable layers to the architecture of the model, typically inside the encoder or decoder components after the attention or feed-forward layers.
       *  Soft prompt methods keep the model architecture fixed and frozen, and focus on manipulating the input to achieve better performance. This can be done by adding trainable parameters to the prompt embeddings or keeping the input fixed and retraining the embedding weights.
+*  Low-rank Adaptation(LoRA) is a parameter-efficient fine-tuning technique
+  *  After the embedding vectors are created, they're fed into the self-attention layers where a series of weights are applied to calculate the attention scores. During full fine-tuning, every parameter in these layers is updated.
+  *  LoRA is a strategy that reduces the number of parameters to be trained during fine-tuning by freezing all of the original model parameters and then injecting a pair of rank decomposition matrices alongside the original weights.
+  *   The dimensions of the smaller matrices are set so that their product is a matrix with the same dimensions as the weights they're modifying. And then, we train the smaller matrices.
+  *   [original weights] + B*A
+  *   Applying LoRA to the self-attention layers of the model is often enough to fine-tune for a task and achieve performance gains. However, you can also use LoRA on other components like the feed-forward layers.
+*   Soft prompt ( prompt tuning not prompt engineering)
+  *  Prompt tuning: you add additional trainable tokens to your prompt and leave it up to the supervised learning process to determine their optimal values.
+  *  Softprompt: The set of trainable tokens is called a soft prompt. It gets prepended to embedding vectors that represent your input text.
+  *  The tokens that represent natural language are hard (fixed location in the embedding vector space). However, the soft prompts are not fixed discrete words of natural language.
