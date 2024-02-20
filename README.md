@@ -15,9 +15,9 @@ Week 2
 * Fine-tuning on a single task
   * drawbacks: catastrophic forgetting=forget other tasks(changed W and bad result on other tasks)
   * Solution: If you need a single task, the drawback is not a big deal. if not:
-    * Multitask tine tuning
-    * Perform parameter-efficient fine-tuning or PEFT
-* Multitask tine tuning
+    * Multitask fine tuning
+    * Perform parameter-efficient fine-tuning(PEFT)
+* Multitask fine tuning
   * FLAN: is a specific set of instructions used to fine-tune different models. FLAN-T5, the FLAN instruct version of the T5 foundation model
 * Model Evaluate
   * Rouge > text summarization
