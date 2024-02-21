@@ -33,7 +33,7 @@ Week 2
     * Reparametrization: it reduces the number of parameters to train by creating new low-rank transformations of the original network weights(LoRA).
     * Additive: It keeps all of the original LLM weights frozen and introduces new trainable components. there are two approches:
       *  Adapter methods add new trainable layers to the architecture of the model, typically inside the encoder or decoder components after the attention or feed-forward layers.
-      *  Soft prompt methods keep the model architecture fixed and frozen, and focus on manipulating the input to achieve better performance. This can be done by adding trainable parameters to the prompt embeddings or keeping the input fixed and retraining the embedding weights.
+      *  Soft prompt methods keep the model architecture fixed and frozen, and focus on manipulating the input to achieve better performance. This can be done by adding trainable parameters to the prompt embeddings or keeping the input fixed and retraining the embedding weights. 
 *  Low-rank Adaptation(LoRA) is a parameter-efficient fine-tuning technique
   *  After the embedding vectors are created, they're fed into the self-attention layers where a series of weights are applied to calculate the attention scores. During full fine-tuning, every parameter in these layers is updated.
   *  LoRA is a strategy that reduces the number of parameters to be trained during fine-tuning by freezing all of the original model parameters and then injecting a pair of rank decomposition matrices alongside the original weights.
