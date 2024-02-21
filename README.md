@@ -44,3 +44,12 @@ Week 2
   * Prompt tuning: you add additional trainable tokens to your prompt and leave it up to the supervised learning process to determine their optimal values.
   * Softprompt: The set of trainable tokens is called a soft prompt. It gets prepended to embedding vectors that represent your input text.
   * The tokens that represent natural language are hard (fixed location in the embedding vector space). However, the soft prompts are not fixed discrete words of natural language.
+* Summary:
+  * full fine tuning:
+    * The training data set consists of input prompts and output completions or labels.
+    * The weights of the large language model are updated
+    * It is supervised learning.
+  * Prompt tuning:
+    * The weights of the large language model are frozen
+    * The embedding vectors of the soft prompt gets updated over time to optimize the model's completion of the prompt.
+    * You can train a different set of soft prompts for each task and then easily swap them out at inference time. 
