@@ -1,4 +1,5 @@
 # Larg Language Model  
+## NOTE: The .ipynb file is a lab assignment from the Coursera website
 ## List of contents  
 Week 1  
 * Transformer Network
