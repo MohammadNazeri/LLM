@@ -7,7 +7,7 @@
 * Prompt Engineering
   
 ## Week 2
-* Instruction fine-tunning
+* ### Instruction fine-tunning
   * Increase performance of the existing model for specific use case > using fine-tuning > to further train a base model
   * fine-tuning with instruction prompt > fine-tune LLM = instruct LLM
   * use an existing dataset with [prompt, completion] > supervised learning instead of self supervised learning
@@ -54,3 +54,4 @@
     * The weights of the large language model are frozen
     * The embedding vectors of the soft prompt gets updated over time to optimize the model's completion of the prompt.
     * You can train a different set of soft prompts for each task and then easily swap them out at inference time. 
+## Week 3
