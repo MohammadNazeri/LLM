@@ -27,7 +27,8 @@
   * Using pre-existing datasets and associated benchmarks
   * Benchmark: GLUE, SuperGLUE and HELM
   * 
-* ### Parameter efficient fine-tuning (PEFT): update a small set of subparameters > less prone to catastrophic forgetting: because original LLM slightly modified
+* ### Parameter efficient fine-tuning (PEFT):
+  * update a small set of subparameters > less prone to catastrophic forgetting: because original LLM slightly modified
   * update a small number of weights + small footprint overall + small adaptation to each task
   * Three main classes of PEFT method:
     * Selective: fine-tune only a subset of parameters. They could be specific layers of a certain component.
