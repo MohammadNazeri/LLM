@@ -1,12 +1,12 @@
 # Larg Language Model  
 ## NOTE: The .ipynb file is a lab assignment from the Coursera website
 ## List of contents  
-Week 1  
+##Week 1  
 * Transformer Network
 * Genitive AI Project Life Cycle
 * Prompt Engineering
   
-Week 2
+##Week 2
 * Instruction fine-tunning
   * Increase performance of the existing model for specific use case > using fine-tuning > to further train a base model
   * fine-tuning with instruction prompt > fine-tune LLM = instruct LLM
