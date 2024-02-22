@@ -56,3 +56,8 @@
     * The embedding vectors of the soft prompt gets updated over time to optimize the model's completion of the prompt.
     * You can train a different set of soft prompts for each task and then easily swap them out at inference time. 
 ## Week 3
+* RLHF: It helps to align the model with human values and uses reinforcement learning as an algorithm.
+* LLMs as a reasoning engine and let it cause our own of routines to create an agent. They can take actions.
+* responsible AI
+* OMS as a reasoning engine
+* 
