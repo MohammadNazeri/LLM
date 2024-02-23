@@ -60,4 +60,18 @@
 * LLMs as a reasoning engine and let it cause our own of routines to create an agent. They can take actions.
 * responsible AI
 * OMS as a reasoning engine
-* 
+* These important human values, helpfulness, honesty, and harmlessness are sometimes collectively called HHH, and are a set of principles that guide developers in the responsible use of AI.
+* RLHF uses reinforcement learning to finetune the LLM with human feedback data.
+* Reinforcement learning is a type of machine learning in which an agent learns to make decisions related to a specific goal by taking actions in an environment, with the objective of maximizing some notion of a cumulative reward.
+* The agent makes decisions by following a strategy known as the RL policy. 
+* The goal of reinforcement learning is for the agent to learn the optimal policy for a given environment that maximizes their rewards. 
+* The sequence of actions and states is called a rollout, instead of the term playout that's used in classic reinforcement learning.
+* components:
+  * Policy: the agent's policy that guides the actions is the LLM
+  * Objectives: its objective is to generate text that is perceived as being aligned with human preferences (helpful, accurate, and non-toxic)
+  * Agents: 
+  * Environment: the context window of the model, the space in which text can be entered via a prompt. 
+  * Actions: This could be a single word, a sentence, or a longer form text, depending on the task specified by the user. At any given moment, the action that the model will take, meaning which token it will choose next, depends on the prompt text in the context and the probability distribution over the vocabulary space.
+  * Action state: The action space is the token vocabulary, meaning all the possible tokens that the model can choose from to generate the completion. 
+  * States: The state that the model considers before taking an action is the current context.  That means any text currently contained in the context window.
+  * Rewards: reward model, to classify the outputs of the LLM and evaluate the degree of alignment with human preferences. 
