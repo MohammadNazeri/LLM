@@ -74,4 +74,7 @@
   * Actions: This could be a single word, a sentence, or a longer form text, depending on the task specified by the user. At any given moment, the action that the model will take, meaning which token it will choose next, depends on the prompt text in the context and the probability distribution over the vocabulary space.
   * Action state: The action space is the token vocabulary, meaning all the possible tokens that the model can choose from to generate the completion. 
   * States: The state that the model considers before taking an action is the current context.  That means any text currently contained in the context window.
-  * Rewards: reward model, to classify the outputs of the LLM and evaluate the degree of alignment with human preferences. 
+  * Rewards: reward model, to classify the outputs of the LLM and evaluate the degree of alignment with human preferences.
+* RLHF: Obtaining feedback from humans
+  * The first step in fine-tuning an LLM with RLHF is to select a model to work with and use it to prepare a data set for human feedback.
+  *  instruct model > fine tuned > generate a number of different responses for each prompt in prompt dataset > produce set of completion for each prompt > collect feedback from human labelers on the completions (decide what criterion to assess (helpfulness)) > rank completions could be number or F (non relevent)> convert the ranking data into a pairwise comparison of completions. > Now, you have  all the data you need to train the reward model Which you will use instead of humans to classify model completions during the reinforcement learning finetuning process. 
